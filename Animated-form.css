@@ -1,0 +1,41 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+}
+.input-grp{
+    position: relative;
+
+
+}
+.input{
+    outline: none;
+    padding: 5px;
+    border: 1px solid #a8a6a6;
+    border-radius: 5px;   
+}
+.label{
+    color: #600ee4;
+    transition: 250ms;
+}
+.input:focus{
+    border:1px solid #600ee4;
+}
+.input:is(:focus) ~ label {
+    transform: translateY(-110%) scale(0.8);
+    background-color: white;
+    color:#600ee4
+}
+.submit-btn{
+    width: 100%;
+    padding: 15px;
+    border:none;
+    cursor: pointer;
+    color: #fff;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: #600ee4;
+}
